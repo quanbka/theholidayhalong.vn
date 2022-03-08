@@ -2,7 +2,7 @@
 <?php
 // die;
 $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
-$origin_link = str_replace( 'https://batdongsan.test/', 'https://theholidayhalong.vn/', "$actual_link");
+$origin_link = str_replace( 'https://batdongsan.test/', 'https://batdongsan.quangninh.vn/', "$actual_link");
 $origin_link = preg_replace("/\?(.*)/", "", $origin_link);
 // print_r($actual_link);
 // print_r($origin_link);
